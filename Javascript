@@ -1,0 +1,31 @@
+let cart = [];
+
+function addToCart(productName, price) {
+    const product = { name: productName, price: price };
+    cart.push(product);
+    alert(`${productName} added to cart!`);
+    console.log(cart);
+}
+
+// For displaying cart in checkout page
+function displayCart() {
+    const cartContainer = document.getElementById('cart-items');
+    let total = 0;
+
+    cart.forEach(item => {
+        const productElement = document.createElement('div');
+        productElement.textContent = `${item.name} - $${item.price}`;
+        cartContainer.appendChild(productElement);
+        total += item.price;
+    });
+
+    const totalElement = document.createElement('div');
+    totalElement.textContent = `Total: $${total}`;
+    cartContainer.appendChild(totalElement);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.pathname === '/checkout.html') {
+        displayCart();
+    }
+});
