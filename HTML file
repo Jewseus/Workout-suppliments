@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Supplements</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Workout Supplements</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Top Quality Supplements for Your Fitness Journey</h1>
+            <p>Boost your performance with the best workout supplements!</p>
+        </section>
+
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="assets/images/protein.jpg" alt="Protein Supplement">
+                    <h3>Protein Powder</h3>
+                    <p>$29.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Protein Powder', 29.99)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/bcaas.jpg" alt="BCAAs">
+                    <h3>BCAAs</h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart" onclick="addToCart('BCAAs', 19.99)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/preworkout.jpg" alt="Preworkout Supplement">
+                    <h3>Pre-Workout</h3>
+                    <p>$24.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Pre-Workout', 24.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Sign up for the latest updates!</h2>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Workout Supplements. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
